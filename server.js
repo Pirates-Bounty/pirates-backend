@@ -10,6 +10,7 @@ const validator = require('validator');
 // Define all the constants
 const USERNAME_MIN = 3;
 const USERNAME_MAX = 20;
+const MYSQL_PW = process.env.MYSQL_PW || '';
 
 // Initialize Express
 const app = express();
@@ -19,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 // Initialize the database
-const db = new Sequelize('pirates_bounty', 'root', '', {
+const db = new Sequelize('pirates_bounty', 'root', MYSQL_PW, {
   host: 'localhost',
   dialect: 'mysql',
   logging: false,
