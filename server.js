@@ -76,7 +76,7 @@ const Session = db.define('sessions', {
     type: Sequelize.DATE,
     allowNull: false,
     unique: false,
-    defaultValue: createTTL(),
+    defaultValue: createTTL,
   },
 }, {
   timestamps: true,
