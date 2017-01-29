@@ -1,0 +1,15 @@
+{
+  "name": "pirates-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Pirates-Bounty/pirates-backend.git",
+  "author": "Pirates Team",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.0",
+    "body-parser": "^1.16.0",
+    "express": "^4.14.0",
+    "mysql": "^2.12.0",
+    "sequelize": "^3.29.0"
+  }
+}
