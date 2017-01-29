@@ -7,7 +7,7 @@ This is the Pirate's Bounty Backend, running on Node.js v.7.4.0 and Express.js. 
 
 ## How to use
 
-The backend accepts HTTP requests on `http://ec2-54-183-31-165.us-west-1.compute.amazonaws.com`. e.g. `POST http://ec2-54-183-31-165.us-west-1.compute.amazonaws.com/user/create`. Send your data in the request body as `application/json`. The backend will respond with data in the response body as `application/json`. The backend will always respond with `code` and `message` in the body.
+The backend accepts HTTP requests on `http://pirates.chrisbanh.com`. e.g. `POST http://pirates.chrisbanh.com/user/create`. Send your data in the request body as `application/json`. The backend will respond with data in the response body as `application/json`. The backend will always respond with `code` and `message` in the body.
 
 Code values:
 * `200` means the action was successful.

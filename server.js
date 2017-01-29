@@ -11,6 +11,7 @@ const validator = require('validator');
 const USERNAME_MIN = 3;
 const USERNAME_MAX = 20;
 const MYSQL_PW = process.env.MYSQL_PW || '';
+const PORT = process.env.PORT|| 3000;
 
 // Initialize Express
 const app = express();
@@ -37,8 +38,8 @@ db.authenticate()
   });
 
 // Start the server
-app.listen(3000, () => {
-  console.log('Server running on port 3000');
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
 
 function createTTL() {
